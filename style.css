@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+body{
+	background:  black;
+}
+.container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.container a{
+    text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	color: black;
+}
+.container button{
+	padding: 10px  20px;
+	width: 200px;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+ 	background-image: repeating-linear-gradient(-45deg, darkturquoise 0%, darkviolet 20%, deeppink 30%, deepskyblue 50%);(-45deg, darkturquoise 0%, darkviolet 20%, deeppink 30%, deepskyblue 50%);
+    background-size: 500%;
+    animation: fanimado 6s infinite;
+    margin-bottom: 20px;
+    background-attachment: fixed;
+    text-decoration:none;
+
+
+		color: #fafafa;
+		box-shadow: 0 6px 8px rgba(0, 0, 0, .1);
+		border-radius: 4px;
+		transition: .4s;
+}
+.container button:hover{
+	border-radius: 30px;
+}
+@keyframes fanimado{
+        0%{
+            background-position: 0%   %;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
